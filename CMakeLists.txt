@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.15)
+project(mclq LANGUAGES C)
+find_package(Python REQUIRED COMPONENTS Interpreter Development.Module)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/mclq")
+add_subdirectory(c_src)

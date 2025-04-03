@@ -1,0 +1,32 @@
+BasedOnStyle: LLVM
+ColumnLimit: 80
+TabWidth: 4
+IndentWidth: 4
+UseTab: Always
+AccessModifierOffset: -4
+BreakBeforeBraces: Attach
+InsertBraces: true
+
+# alignment
+AlignConsecutiveAssignments: 
+  Enabled: false
+AlignAfterOpenBracket: Align
+AlignConsecutiveMacros: 
+  Enabled: true
+  AcrossComments: false
+  AcrossEmptyLines: true
+AlignEscapedNewlines: Right
+BinPackArguments: false
+BinPackParameters: false
+NamespaceIndentation: All
+
+# extra formatting
+Cpp11BracedListStyle: true
+FixNamespaceComments: true
+InsertNewlineAtEOF: true 
+
+# Ensures that even if a function is short, it follows the brace rules
+AllowShortFunctionsOnASingleLine: None
+# Force braces on if/for/while, even if they are one-liners
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false

@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mclq"
+version = "0.1.0"
+description = "Implementation of MCLQ: Monte-Carlo Linear-Quadratic Games"
+authors = [{name = "Benjamin Christie", email = "imbenchristie+mclq@gmail.com"}]
+dependencies = ["numpy>=2", "numba~=0.60.0", "pytest~=8.4.2", "pytest-cov~=7.0.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
